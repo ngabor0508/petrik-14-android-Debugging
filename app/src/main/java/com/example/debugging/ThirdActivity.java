@@ -26,6 +26,6 @@ public class ThirdActivity extends AppCompatActivity {
 
     public void init()
     {
-        buttonBack = findViewById(R.id.buttonExit);
+        buttonBack = findViewById(R.id.buttonBack);
     }
 }
