@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if ((editTextName.getText().toString().equals(""))) {
+                    Toast.makeText(MainActivity.this, "A név mezőt kötelező kitölteni!", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+
                     SharedPreferences sharedPreferences = getSharedPreferences("Adatok", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("nev", editTextName.getText().toString());
@@ -34,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, Menu.class);
                     startActivity(intent);
                     finish();
-                }
-                else
-                {
-                    //Toast.makeText(MainActivity.this, "A név mezőt kötelező kitölteni!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
