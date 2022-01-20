@@ -44,7 +44,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         textViewName = findViewById(R.id.textViewName);
 
         SharedPreferences sharedPreferences = getSharedPreferences("Adatok", Context.MODE_PRIVATE);
-        seged = sharedPreferences.getString("Nev","Nincs elmentve a neved!");
+        seged = sharedPreferences.getString("nev","Nincs elmentve a neved!");
         textViewName.setText(seged);
 
 
