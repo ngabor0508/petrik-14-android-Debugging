@@ -12,8 +12,7 @@ import android.widget.TextView;
 public class ThirdActivity extends AppCompatActivity {
 
     private Button buttonBack;
-    private TextView textViewName;
-    private EditText editText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +32,6 @@ public class ThirdActivity extends AppCompatActivity {
     public void init()
     {
         buttonBack = findViewById(R.id.buttonBack);
-        textViewName = findViewById(R.id.textViewName);
-        editText = findViewById(R.id.editTextName);
 
     }
 }
